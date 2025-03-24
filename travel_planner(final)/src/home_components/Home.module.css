@@ -1,0 +1,118 @@
+.home {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background: url('./img/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+}
+
+.home .text {
+    text-align: center;
+    margin-bottom: 5%;
+
+    h1 {
+        color: #212529;
+    }
+
+    p {
+        max-width: 60%;
+        margin: auto;
+        color: #6c757d;
+        line-height: 1.5rem;
+    }
+}
+
+.home .wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.home .buttons {
+    display: flex;
+    position: relative;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+.buttons .start {
+    width: 13rem;
+    font-size: clamp(0.8rem, 18px, 2rem);
+    text-align: center;
+    text-decoration: none;
+    padding: 1.2rem 0.7rem;
+    border-radius: 30px;
+    color: white;
+    background-color: #007e82;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.buttons .start:hover {
+    background-color: #006568;
+}
+
+.buttons .info {
+    border: none;
+    background-color: transparent;
+    font-size: clamp(0.8rem, 18px, 2rem);
+    cursor: pointer;
+    font-weight: 600;
+    color: #212529;
+    transition: color 0.3s;
+}
+
+.buttons .info:hover {
+    color: #357698;
+}
+
+.video {
+    margin: 5vh 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+
+.video_text {
+    /* margin-top: 5%; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+    h3 {
+        color: #212529;
+    }
+
+    p {
+        color: #6c757d;
+        max-width: 80%;
+        margin: 0;
+    }
+}

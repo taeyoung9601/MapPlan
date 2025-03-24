@@ -1,0 +1,15 @@
+.infoBox {
+    width: 80%;
+    min-height: 80px;
+
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+
+    padding: 20px 20px;
+
+    background-color: white;
+    border-radius: 20px;
+
+    /* display: none; */
+}

@@ -1,0 +1,76 @@
+.calendar {
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 100vw;
+    position: relative;
+    /* background-color: black; */
+}
+
+.plan_window {
+    position: relative;
+    width: 40vw;
+    height: 95vh;
+    /* overflow: hidden; */
+    background-color: #fff;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    margin-right: auto;
+    /* overflow: hidden; */
+    /* 왼쪽 고정 */
+}
+
+.calendar_container {
+    position: absolute;
+    top: 5%;
+    left: 12.5%;
+    height: 30vw;
+    /* transform: translateY(-50%); */
+}
+
+/* 지도 */
+.map_container {
+    width: 60vw;
+    height: 95vh;
+}
+
+.completeBtn {
+    background-color: #007e82;
+    position: relative;
+    color: white;
+    padding: 10px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.completeBtn:hover {
+    background-color: #006568;
+    transition: background-color 0.3s;
+}
+
+.dropdown {
+    font-size: 1rem;
+    margin: 20px 0;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.dropdown option:hover {
+    background-color: #007e82;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 50vh;
+    color: #212529;
+
+    h3 {
+        margin: 0;
+    }
+}

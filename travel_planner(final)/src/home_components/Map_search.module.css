@@ -1,0 +1,85 @@
+.input_container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+    width: 550px;
+    height: 55px;
+}
+
+#destination {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 0 0 0 70px;
+    border: 2px solid #d9d9d9;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: border, background-color 0.3s;
+}
+
+#destination:focus {
+    outline: none;
+    border: 2px solid #007e82;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0 0 0 70px;
+    text-align: left;
+}
+
+#destination:focus+.input_text .placeholder {
+    opacity: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.input_container .input_text {
+    pointer-events: none;
+    position: absolute;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .placeholder {
+        margin-left: 10px;
+        color: #adb5bd;
+        font-style: italic;
+        transition: opacity 0.3s;
+    }
+}
+
+/* 검색창 추천목록 드랍다운 스타일링 */
+
+:global(.pac-container) {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    padding: 5px 0;
+}
+
+:global(.pac-item) {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+:global(.pac-icon) {
+    margin-right: 10px;
+}
+
+:global(.pac-item-query) {
+    font-weight: bold;
+    color: #333;
+}
+
+:global(.pac-item-text) {
+    display: flex;
+    flex-direction: column;
+}
+
+:global(.pac-secondary-text) {
+    font-size: 0.9em;
+    color: #666;
+}

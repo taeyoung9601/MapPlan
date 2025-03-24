@@ -1,0 +1,74 @@
+.create_plan {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px 10px;
+    background-image: url('./img/create.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.create_plan .wrapper {
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px 10px;
+    border-radius: 8px;
+}
+
+.create_plan .text {
+    color: #212529;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    z-index: 2;
+}
+
+.search {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.create_plan .buttons {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.create_plan .buttons a {
+    text-decoration: none !important;
+    text-align: center;
+    width: 10rem;
+    font-size: clamp(0.8rem 2vw 2rem);
+    padding: 1rem 0.7rem;
+    border-radius: 30px;
+    background-color: #007e82;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.create_plan .buttons a:hover {
+    background-color: #006568;
+}
+
+.error {
+    position: absolute;
+    color: red;
+    margin-top: 5rem;
+}

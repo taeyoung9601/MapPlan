@@ -1,0 +1,28 @@
+.infoBox {
+    width: 80%;
+    min-height: 80px;
+
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+
+    background-color: white;
+    border-radius: 10px;
+
+    /* display: none; */
+}
+
+.infoBox p {
+    margin: 5px;
+}
+
+.infoBox_none {
+    display: none;
+}
+
+.place_info {
+    color: #212529;
+}

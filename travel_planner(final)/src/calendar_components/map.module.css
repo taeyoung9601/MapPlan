@@ -1,0 +1,8 @@
+.mapstyle {
+    position: relative;
+}
+
+.mapContainer {
+    width: 60vw;
+    height: 95vh;
+}

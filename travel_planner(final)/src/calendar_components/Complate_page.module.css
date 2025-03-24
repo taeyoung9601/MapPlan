@@ -1,0 +1,64 @@
+.container {
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+}
+
+.title {
+    background-image: url('./img/complete.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30vw;
+    height: 30vh;
+}
+
+.title .wrapper {
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.title div {
+    position: absolute;
+    width: 20vw;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title .homeBtn {
+    position: absolute;
+    text-decoration: none !important;
+    text-align: center;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 1rem 0.7rem;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #007e82;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.title .homeBtn:hover {
+    background-color: #006568;
+}
